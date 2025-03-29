@@ -1,0 +1,636 @@
+:root {
+    --primary-color: #0d1117;
+    --secondary-color: #161b22;
+    --text-color: #c9d1d9;
+    --accent-color: #58a6ff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Normal weight */
+    font-style: normal;
+    
+  
+      
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.container img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea, button {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+#home {
+    margin-top:150px;
+    align-content:flex-start;
+    height:70vh;
+    display:flex;
+    text-align: left;
+    gap:500px;
+}
+#frontFont {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF6700;
+    font-family: system-ui;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    animation: fade-in 5s ease-out;
+}
+      
+      
+
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.glow-text {
+    font-size: 50px; /* Adjust as needed */
+    font-weight: bold;
+    color: #ff6600;
+    animation: glow-flicker 1s infinite alternate;
+}
+@keyframes glow-flicker {
+    0% { text-shadow: 0 0 10px #ff6200, 0 0 20px #ff6200; }
+    20% { text-shadow: 0 0 15px #ff6200, 0 0 30px #ff6200; }
+    30% { text-shadow: 0 0 10px #ff6200, 0 0 20px #ff6200; }
+}
+.introduction{
+    animation: fade-in 3s ease-out;
+    animation-delay: 0.5s; /* Delays the paragraph fade-in by 0.5s */
+    opacity: 0; /* Ensures the element stays hidden before animation starts */
+    animation-fill-mode: forwards;
+}
+
+img{
+    width: 500px;
+
+}
+.profile-image:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+    box-shadow: 0 0 50px rgba(255, 103, 0, 0.8); /* Adds a glowing effect */
+}
+
+
+.profile-image {
+    animation: slideIn 3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes glow {
+    0% { text-shadow: 0 0 3px #ff6600, 0 0 6px #ff4500; }
+    50% { text-shadow: 0 0 6px #ff4500, 0 0 12px #ff6600; }
+    100% { text-shadow: 0 0 3px #ff6600, 0 0 6px #ff4500; }
+}
+
+
+
+
+#about {
+    align-content: flex-start;
+    height: 90vh;
+    display: flex;
+    text-align: start;
+    margin-top: -280px;
+    gap: 300px;
+    align-items: flex-start; /* Ensure items stay aligned */
+    position: relative; /* Fix positioning */
+    
+}
+
+
+#fontAbout {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF6700;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    white-space: nowrap;
+}
+    
+
+
+#nameAbout {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+   
+   
+    
+    font-size: 3rem;
+    white-space: nowrap;
+    color: #FDFBEE;
+    min-width: 400px; /* Ensures it doesn't shrink */
+    display: inline-block; /* Prevents shifting */
+}
+
+#aboutPara {
+    font-size: 2rem;
+    position: relative;
+    top: 90px; /* Move it down */
+    position: absolute; /* Keeps it in place */
+    left: 50%; /* Adjust positioning */
+    transform: translateX(-50%); /* Centers properly */
+    margin-left: 390px;
+    width: 100%; 
+    max-width: 800px; /* Increase width to spread text */
+    text-align: left;
+    margin-bottom: -100px;
+
+}
+
+#line{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border: none;
+    border-top: 10px solid rgba(255, 255, 255, 0.3); /* Light line */
+    margin-top: -10px;  /* Moves the line up */
+    margin-bottom: 20px; /* Adds space below */
+    padding-top: 300px;
+}
+
+.vertical-line {
+    width: 2px; /* Adjust thickness */
+    height: 600px; /* Adjust height */
+    background-color: rgba(255, 255, 255, 0.3); /* Light transparent white */
+    position: absolute;
+    left: 40%; /* Adjust this value as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -50px;
+    margin-left:120px;
+}
+
+
+#skillsHeading{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF6700;
+    font-family: system-ui;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    white-space: nowrap;
+    margin-top: -40px;
+    margin-left:-140px;
+
+}
+#skills{
+    height:80vh;
+    margin-left: 5rem;
+    
+}
+.skill{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Border around each skill */
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    height: 30px;
+    transition: all 0.3s ease;
+    font-size: 24px; /* Adjust size */
+    font-weight:lighter; /* Make it bold if needed */
+    margin-left: 100px;
+    
+    
+}
+
+
+.skill:hover {
+    border-color: #fff;
+    transform: scale(1.1);
+}
+.skill img {
+    width: 6px; /* Adjust icon size */
+    height: auto;
+    margin-bottom: 10px;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Adjust spacing */
+    text-align: center;
+}
+
+    
+    .icon{
+        font-size: 30px; /* For font-based icons */
+    width: 40px; /* For image-based icons */
+    height: 40px; /* Keep aspect ratio */
+    }
+
+
+/* Featured Projects Section */
+#projects {
+    text-align: center;
+    padding: 60px 20px;
+    
+        background-color: var(--bg-color);
+   
+    
+}
+
+.section-title {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #FF6700;
+    font-family: system-ui;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    white-space: nowrap;
+    margin-top: -40px;
+    
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #c9d1d9;
+    max-width: 600px;
+    margin: 10px auto 30px;
+}
+
+/* Project Cards Grid */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual Project Card */
+.project-card {
+    background:#5a5e66;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Image */
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Project Info */
+.project-info {
+    padding: 15px;
+}
+
+.project-info h3 {
+    font-size: 22px;
+    color: rgb(26, 25, 25);
+    margin-bottom: 5px;
+}
+
+.project-info p {
+    font-size: 16px;
+    color:rgb(222, 208, 208);
+}
+
+/* Tags */
+.tags {
+    margin-top: 10px;
+}
+
+.tags span {
+    background: #65EEB7;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-right: 5px;
+    color:#0d1117
+}
+
+/* Visit Link */
+.visit-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #EC994B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.visit-link:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+     #certificate{
+        height:70vh;
+    }
+    
+    
+    
+        #certificateName{
+            font-size: 3rem;
+            font-weight: bold;
+            color: #FF6700;
+            font-family: system-ui;
+            font-family: "Boldonse", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            white-space: nowrap;
+            margin-top: -40px;
+            margin-left: -1200px;
+            
+        }
+        #certificate {
+            text-align: center;
+            padding: 20px;
+            height: 100vh;
+        }
+        
+        .certificate-container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 100px; 
+            margin-left: -10px;
+            margin-top: 100px;
+        }
+        
+        .certificate {
+            width: 300px; 
+            text-align: center;
+            height:100vh;
+        }
+        
+        .certificate img {
+            width: 100%; 
+            height: auto;
+            border-radius: 20px; 
+        }
+        #certificatePara {
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        #dots{
+           margin-top: 45px;
+        } */
+
+        Hover effect for certificate 
+.certificate-hover {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.certificate img {
+    width: 100%; 
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* View Certificate Text */
+.view-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.certificate-hover:hover img {
+    transform: translateY(-10px);
+}
+
+.certificate-hover:hover .view-text {
+    opacity: 1;
+}
+
+/* Link Styling */
+.certificate-link {
+    text-decoration: none;
+}
+
+        #contact{
+            height:70vh;
+        }
+        #contactName{
+            font-size: 3rem;
+            font-weight: bold;
+            color: #FF6700;
+            font-family: system-ui;
+            font-family: "Boldonse", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            white-space: nowrap;
+            margin-top: -40px;
+            margin-left: -1200px;
+        }
+        #contactForm{
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 100px;
+            
+        }
+        
+        #contactInfo {
+            margin-right: 1300px;
+            margin-top: 100px;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;  /* Ensures proper vertical alignment */
+            gap: 20px;  /* Adds spacing between icons */
+        }
+        
+        #mailImg {
+            height: 35px;
+            width: 35px;
+        }
+        
+        .icons {
+            font-size: 2rem; /* Adjusts icon size */
+        }
+        
+        a {
+            text-decoration: none; /* Removes default link underline */
+        }
+        
+        a:hover {
+            opacity: 0.7; /* Reduces opacity on hover for a smooth effect */
+            transition: 0.3s;
+        }
+        #cIcon{
+            height:35px;
+            width:35px;
+            margin-bottom: -5px;
+        }
+        #cppIcon{
+            height:35px;
+            width:35px;
+            margin-bottom: -5px;
+        }
+        .profile-image {
+            width: 400px; /* Adjust size as needed */
+            height: 400px; /* Keep width and height equal for a perfect circle */
+            border-radius: 70%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image fills the circle without distortion */
+            border: 3px solid #FF6700; /* Optional: Adds a border */
+            transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Smooth animation */
+        }
+
+        #send-btn {
+            background-color: #2BB3C0;
+        }
+        
+       
+        
+        
+    
+    
+    
+         
+       
+    
+        
+      
+        
+       
+    
+
+   
+
+
+
+
+
+     
+   
+
+    
+  
+    
+   
+ 
