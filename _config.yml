@@ -1,0 +1,6 @@
+.yml
+title: My Portfolio
+theme: minima  # Change this if using a different Jekyll theme
+markdown: kramdown
+sass:
+  sass_dir: assets/css
