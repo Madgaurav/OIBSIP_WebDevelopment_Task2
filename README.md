@@ -2,11 +2,12 @@
 
 Welcome to my **personal portfolio website** — a sleek, animated, and modern representation of my skills, projects, and certifications.
 
-![Portfolio Screenshot](gaurav-portfolio-screenshot.png)
+![Portfolio Screenshot](![image](https://github.com/user-attachments/assets/04226214-c8ba-48e7-8dd8-e27ef1ab5173)
+
 
 ## 🌐 Live Demo
-[🔗 Visit the Website](https://madgaurav.github.io/YourPortfolioLink/)  
-> *(Replace with your actual GitHub Pages or hosted link)*
+[🔗 Visit the Website](https://madgaurav.github.io/OIBSIP_WebDevelopment_Task2/)  
+
 
 ---
 
